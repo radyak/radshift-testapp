@@ -1,0 +1,23 @@
+{
+  "name": "radshift-testapp",
+  "version": "0.0.1",
+  "description": "Test app to check how requests reach a routed backend",
+  "main": "index.js",
+  "directories": {},
+  "repository": "https://github.com/radyak/radshift-testapp",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "PORT=3001 nodemon ./index.js localhost"
+  },
+  "author": "florian.vogel84@gmx.net",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "express-jwt-permissions": "^1.2.3",
+    "express-ws": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
