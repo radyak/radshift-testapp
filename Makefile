@@ -44,4 +44,8 @@ run.x86: build.x86
 run.dev:
 	npm run watch
 
+
+
+## common
+
 deploy.all: deploy.arm32 deploy.x86
