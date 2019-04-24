@@ -4,8 +4,8 @@
 IMAGE=radshift-testapp
 REPO=radyak
 
-BASE_IMAGE_ARM32=arm32v7/node
-BASE_IMAGE_X86=node:8
+BASE_IMAGE_ARM32=arm32v7/node:lts-slim
+BASE_IMAGE_X86=node:lts-alpine
 
 TAG=latest
 TAG_X86=x86-latest
