@@ -55,6 +55,6 @@ app.use('/secured', jwt({
 
 app.use('*', debug)
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 3210)
 
 module.exports = app

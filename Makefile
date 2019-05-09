@@ -36,7 +36,7 @@ deploy.x86: build.x86
 	docker push $(REPO)/$(IMAGE):$(TAG_X86)
 
 run.x86: build.x86
-	docker run -p 3000:3000 -e PORT=3000 $(REPO)/$(IMAGE):$(TAG_X86)
+	docker run -p 3210:3210 -e PORT=3210 $(REPO)/$(IMAGE):$(TAG_X86)
 
 
 ## dev
