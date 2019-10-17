@@ -1,8 +1,9 @@
 #!make
+include ../.env
+export
 
 
 IMAGE=radshift-testapp
-REPO=radyak
 
 BASE_IMAGE_ARM32=arm32v7/node:lts-slim
 BASE_IMAGE_X86=node:lts-alpine
