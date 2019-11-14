@@ -1,5 +1,6 @@
 var express = require('express')
 var app = express()
+var cookieParser = require('cookie-parser')
 
 var jwt = require('express-jwt')
 var jwtPermissions = require('express-jwt-permissions')
@@ -14,7 +15,8 @@ function normalizeReq (req) {
     url: req.originalUrl,
     headers: req.headers,
     body: req.body,
-    user: req.user
+    user: req.user,
+    cookies: req.cookies
   }
 
   console.log(`${normalizedReq.method} ${normalizedReq.url}`)
@@ -39,6 +41,7 @@ app.use(
   })
 )
 app.use(bodyParser.json())
+app.use(cookieParser());
 
 app.ws('/ws', function (ws, req) {
   normalizeReq(req)

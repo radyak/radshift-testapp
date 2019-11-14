@@ -12,6 +12,7 @@
   "author": "florian.vogel84@gmx.net",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
     "express-jwt": "^5.3.1",
     "express-jwt-permissions": "^1.2.3",
